@@ -1,3 +1,3 @@
 package config
 
-name: string | *"SuperGreenOSBoilerplate"
+name: string | *"SuperGreenTester"

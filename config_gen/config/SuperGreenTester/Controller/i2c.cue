@@ -2,8 +2,8 @@ package config
 
 _i2c_conf: [
   {
-    sda: 26
-    scl: 27
+    sda: 18
+    scl: 5
     enabled: 1
     port: 0
   },
@@ -13,4 +13,10 @@ _i2c_conf: [
     enabled: 1
     port: 1
   },
+  {
+    sda: 21
+    scl: 19
+    enabled: 1
+    port: 1
+  }
 ]

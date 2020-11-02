@@ -23,7 +23,7 @@ modules ota fields server_port: _INT16 & _NVS & _HTTP_RW & {
 }
 
 modules ota fields basedir: _STRING & _NVS & _HTTP_RW & {
-  default: string | *"/SuperGreenOSBoilerplate"
+  default: string | *"/SuperGreenTester"
 }
 
 modules ota fields status: _INT8 & _HTTP & {

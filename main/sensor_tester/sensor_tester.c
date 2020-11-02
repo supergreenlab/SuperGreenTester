@@ -36,8 +36,6 @@ static void sensor_tester_task(void *param);
 void init_sensor_tester() {
   ESP_LOGI(SGO_LOG_EVENT, "@SENSOR_TESTER Initializing sensor_tester module\n");
 
-  // TODO: write you setup code here
-
   xTaskCreatePinnedToCore(sensor_tester_task, "SENSOR_TESTER", 4096, NULL, 10, NULL, 1);
 }
 

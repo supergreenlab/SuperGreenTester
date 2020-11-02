@@ -37,7 +37,8 @@ static void blower_tester_task(void *param) {
   double i = 0;
   while (true) {
     if (get_tester_animation() == 0) {
-      return;
+      vTaskDelay(1 * 500 / portTICK_PERIOD_MS);
+      continue;
     }
     double duty = (sinf(i)+1)/2*100;
     for (int j = 0; j < N_MOTOR; ++j) {

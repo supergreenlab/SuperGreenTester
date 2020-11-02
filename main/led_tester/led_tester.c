@@ -37,7 +37,8 @@ static void led_tester_task(void *param) {
   double i = 0;
   while (true) {
     if (get_tester_animation() == 0) {
-      return;
+      vTaskDelay(500 / portTICK_PERIOD_MS);
+      continue;
     }
     for (int j = 0; j < N_LED; ++j) {
       double duty = (cosf(i+j*M_PI/6)+1)/2*100;

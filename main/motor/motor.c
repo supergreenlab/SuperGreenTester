@@ -112,3 +112,10 @@ int on_set_motor_frequency(int motorId, int value) {
   xQueueSend(cmd, &c, 0);
   return value;
 }
+
+int on_set_motor_duty(int motorId, int value) {
+  value = min(100, max(value, 0));
+  set_motor_duty(motorId, value);
+  refresh_motors();
+  return value;
+}

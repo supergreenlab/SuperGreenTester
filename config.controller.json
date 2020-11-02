@@ -1366,14 +1366,14 @@
                         "enable": false
                     },
                     "default": 0,
-                    "write_cb": false,
+                    "write_cb": true,
                     "type": "integer",
                     "nosend": false,
                     "helper": "",
                     "dump_freq": 60,
                     "http": {
                         "enable": true,
-                        "write": false
+                        "write": true
                     },
                     "indir": {
                         "enable": false
@@ -1393,14 +1393,14 @@
                         "enable": false
                     },
                     "default": 0,
-                    "write_cb": false,
+                    "write_cb": true,
                     "type": "integer",
                     "nosend": false,
                     "helper": "",
                     "dump_freq": 60,
                     "http": {
                         "enable": true,
-                        "write": false
+                        "write": true
                     },
                     "indir": {
                         "enable": false
@@ -1420,14 +1420,14 @@
                         "enable": false
                     },
                     "default": 0,
-                    "write_cb": false,
+                    "write_cb": true,
                     "type": "integer",
                     "nosend": false,
                     "helper": "",
                     "dump_freq": 60,
                     "http": {
                         "enable": true,
-                        "write": false
+                        "write": true
                     },
                     "indir": {
                         "enable": false

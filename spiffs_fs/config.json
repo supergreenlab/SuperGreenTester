@@ -1,0 +1,1474 @@
+{
+  "name": "SuperGreenTester",
+  "keys": [
+    
+            {
+              "core": true,
+              "name": "time",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "TIME",
+              "module": "time",
+              
+              
+                "ble": {
+                  "uuid": "{0x9b,0x6a,0x3b,0xe2,0xaa,0xb4,0x33,0xaa,0x8a,0x4a,0x9e,0xe1,0x4f,0xee,0xf9,0x40}",
+                  "write": true
+                },
+              
+              "write": true,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "reboot",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "REBOOT",
+              "module": "reboot",
+              
+              
+              "write": true,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "n_restarts",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "N_RESTARTS",
+              "module": "reboot",
+              
+              
+              "write": false,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "ota_status",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "OTA_STATUS",
+              "module": "ota",
+              
+              
+              "write": false,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "ota_timestamp",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "OTA_TIMESTAMP",
+              "module": "ota",
+              
+              
+              "write": true,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "ota_server_ip",
+              "type": "string",
+              "integer": false,
+              "caps_name": "OTA_SERVER_IP",
+              "module": "ota",
+              
+              
+              "write": true,
+              
+              
+              "default": "198.211.123.192"
+            },
+          
+            {
+              "core": true,
+              "name": "ota_server_hostname",
+              "type": "string",
+              "integer": false,
+              "caps_name": "OTA_SERVER_HOSTNAME",
+              "module": "ota",
+              
+              
+              "write": true,
+              
+              
+              "default": "update2.supergreenlab.com"
+            },
+          
+            {
+              "core": true,
+              "name": "ota_server_port",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "OTA_SERVER_PORT",
+              "module": "ota",
+              
+              
+              "write": true,
+              
+              
+              "default": 80
+            },
+          
+            {
+              "core": true,
+              "name": "ota_basedir",
+              "type": "string",
+              "integer": false,
+              "caps_name": "OTA_BASEDIR",
+              "module": "ota",
+              
+              
+              "write": true,
+              
+              
+              "default": "/SuperGreenTester"
+            },
+          
+            {
+              "core": true,
+              "name": "broker_url",
+              "type": "string",
+              "integer": false,
+              "caps_name": "BROKER_URL",
+              "module": "mqtt",
+              
+              
+              "write": true,
+              
+              
+              "default": "mqtt://sink2.supergreenlab.com:1883"
+            },
+          
+            {
+              "core": true,
+              "name": "broker_channel",
+              "type": "string",
+              "integer": false,
+              "caps_name": "BROKER_CHANNEL",
+              "module": "mqtt",
+              
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "broker_clientid",
+              "type": "string",
+              "integer": false,
+              "caps_name": "BROKER_CLIENTID",
+              "module": "mqtt",
+              
+              
+                "ble": {
+                  "uuid": "{0x17,0xfe,0xc3,0xc1,0x6b,0xe1,0x15,0x54,0xa5,0x74,0x55,0x9c,0x81,0x69,0x42,0x42}",
+                  "write": false
+                },
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_0_sda",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_0_SDA",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 0,
+                  "param": "sda"
+                },
+                "i2c": {
+                  "index": 0,
+                  "param": "sda"
+                },
+              
+              
+              "default": 18
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_1_sda",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_1_SDA",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 1,
+                  "param": "sda"
+                },
+                "i2c": {
+                  "index": 1,
+                  "param": "sda"
+                },
+              
+              
+              "default": 21
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_2_sda",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_2_SDA",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 2,
+                  "param": "sda"
+                },
+                "i2c": {
+                  "index": 2,
+                  "param": "sda"
+                },
+              
+              
+              "default": 21
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_0_scl",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_0_SCL",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 0,
+                  "param": "scl"
+                },
+                "i2c": {
+                  "index": 0,
+                  "param": "scl"
+                },
+              
+              
+              "default": 5
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_1_scl",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_1_SCL",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 1,
+                  "param": "scl"
+                },
+                "i2c": {
+                  "index": 1,
+                  "param": "scl"
+                },
+              
+              
+              "default": 19
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_2_scl",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_2_SCL",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 2,
+                  "param": "scl"
+                },
+                "i2c": {
+                  "index": 2,
+                  "param": "scl"
+                },
+              
+              
+              "default": 19
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_0_enabled",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_0_ENABLED",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 0,
+                  "param": "enabled"
+                },
+                "i2c": {
+                  "index": 0,
+                  "param": "enabled"
+                },
+              
+              
+              "default": 1
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_1_enabled",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_1_ENABLED",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 1,
+                  "param": "enabled"
+                },
+                "i2c": {
+                  "index": 1,
+                  "param": "enabled"
+                },
+              
+              
+              "default": 1
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_2_enabled",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_2_ENABLED",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 2,
+                  "param": "enabled"
+                },
+                "i2c": {
+                  "index": 2,
+                  "param": "enabled"
+                },
+              
+              
+              "default": 1
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_0_port",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_0_PORT",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 0,
+                  "param": "port"
+                },
+                "i2c": {
+                  "index": 0,
+                  "param": "port"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_1_port",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_1_PORT",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 1,
+                  "param": "port"
+                },
+                "i2c": {
+                  "index": 1,
+                  "param": "port"
+                },
+              
+              
+              "default": 1
+            },
+          
+            {
+              "core": true,
+              "name": "i2c_2_port",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "I2C_2_PORT",
+              "module": "i2c",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "i2c",
+                  "len": 3,
+                  "index": 2,
+                  "param": "port"
+                },
+                "i2c": {
+                  "index": 2,
+                  "param": "port"
+                },
+              
+              
+              "default": 1
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_status",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "WIFI_STATUS",
+              "module": "wifi",
+              
+              
+                "ble": {
+                  "uuid": "{0x17,0xfe,0xc3,0xc1,0x6b,0xe1,0x15,0x54,0xa5,0x74,0x55,0x9c,0x81,0x69,0xa3,0x5c}",
+                  "write": false
+                },
+              
+              "write": false,
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_ssid",
+              "type": "string",
+              "integer": false,
+              "caps_name": "WIFI_SSID",
+              "module": "wifi",
+              
+              
+                "ble": {
+                  "uuid": "{0x17,0xfe,0xc3,0xc1,0x6b,0xe1,0x15,0x54,0xa5,0x74,0x55,0x9c,0x81,0x69,0xa3,0x6c}",
+                  "write": true
+                },
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_password",
+              "type": "string",
+              "integer": false,
+              "caps_name": "WIFI_PASSWORD",
+              "module": "wifi",
+              
+              
+                "ble": {
+                  "uuid": "{0x17,0xfe,0xc3,0xc1,0x6b,0xe1,0x15,0x54,0xa5,0x74,0x55,0x9c,0x81,0x69,0xa3,0x7c}",
+                  "write": true
+                },
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_ap_ssid",
+              "type": "string",
+              "integer": false,
+              "caps_name": "WIFI_AP_SSID",
+              "module": "wifi",
+              
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_ap_password",
+              "type": "string",
+              "integer": false,
+              "caps_name": "WIFI_AP_PASSWORD",
+              "module": "wifi",
+              
+              
+              "write": true,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": true,
+              "name": "mdns_domain",
+              "type": "string",
+              "integer": false,
+              "caps_name": "MDNS_DOMAIN",
+              "module": "wifi",
+              
+              
+              "write": true,
+              
+              
+              "default": "supergreendriver"
+            },
+          
+            {
+              "core": true,
+              "name": "wifi_ip",
+              "type": "string",
+              "integer": false,
+              "caps_name": "WIFI_IP",
+              "module": "wifi",
+              
+              
+                "ble": {
+                  "uuid": "{0x17,0xfe,0xc3,0xc1,0x6b,0xe1,0x15,0x54,0xa5,0x74,0x55,0x9c,0x81,0x69,0xa3,0x8c}",
+                  "write": false
+                },
+              
+              "write": false,
+              
+              
+              "default": ""
+            },
+          
+            {
+              "core": false,
+              "name": "status_led_red_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "STATUS_LED_RED_GPIO",
+              "module": "status_led",
+              
+              
+              "write": true,
+              
+              
+              "default": 23
+            },
+          
+            {
+              "core": false,
+              "name": "status_led_green_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "STATUS_LED_GREEN_GPIO",
+              "module": "status_led",
+              
+              
+              "write": true,
+              
+              
+              "default": 22
+            },
+          
+            {
+              "core": false,
+              "name": "status_led_dim",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "STATUS_LED_DIM",
+              "module": "status_led",
+              
+              
+              "write": true,
+              
+              
+              "default": 10
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_0_present",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_0_PRESENT",
+              "module": "sht21",
+              
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 0,
+                  "param": "present"
+                },
+                "sht21": {
+                  "index": 0,
+                  "param": "present"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_1_present",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_1_PRESENT",
+              "module": "sht21",
+              
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 1,
+                  "param": "present"
+                },
+                "sht21": {
+                  "index": 1,
+                  "param": "present"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_2_present",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_2_PRESENT",
+              "module": "sht21",
+              
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 2,
+                  "param": "present"
+                },
+                "sht21": {
+                  "index": 2,
+                  "param": "present"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_0_temp",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_0_TEMP",
+              "module": "sht21",
+              "helper": "SHT21 temperature on port #1",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 0,
+                  "param": "temp"
+                },
+                "sht21": {
+                  "index": 0,
+                  "param": "temp"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_1_temp",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_1_TEMP",
+              "module": "sht21",
+              "helper": "SHT21 temperature on port #2",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 1,
+                  "param": "temp"
+                },
+                "sht21": {
+                  "index": 1,
+                  "param": "temp"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_2_temp",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_2_TEMP",
+              "module": "sht21",
+              "helper": "SHT21 temperature on port #3",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 2,
+                  "param": "temp"
+                },
+                "sht21": {
+                  "index": 2,
+                  "param": "temp"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_0_humi",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_0_HUMI",
+              "module": "sht21",
+              "helper": "SHT21 humidity on port #1",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 0,
+                  "param": "humi"
+                },
+                "sht21": {
+                  "index": 0,
+                  "param": "humi"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_1_humi",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_1_HUMI",
+              "module": "sht21",
+              "helper": "SHT21 humidity on port #2",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 1,
+                  "param": "humi"
+                },
+                "sht21": {
+                  "index": 1,
+                  "param": "humi"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "sht21_2_humi",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "SHT21_2_HUMI",
+              "module": "sht21",
+              "helper": "SHT21 humidity on port #3",
+              
+              "write": false,
+              
+                "array": {
+                  "name": "sht21",
+                  "len": 3,
+                  "index": 2,
+                  "param": "humi"
+                },
+                "sht21": {
+                  "index": 2,
+                  "param": "humi"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "motor_0_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_0_DUTY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 0,
+                  "param": "duty"
+                },
+                "motor": {
+                  "index": 0,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "motor_1_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_1_DUTY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 1,
+                  "param": "duty"
+                },
+                "motor": {
+                  "index": 1,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "motor_2_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_2_DUTY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 2,
+                  "param": "duty"
+                },
+                "motor": {
+                  "index": 2,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "motor_0_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_0_GPIO",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 0,
+                  "param": "gpio"
+                },
+                "motor": {
+                  "index": 0,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 4
+            },
+          
+            {
+              "core": false,
+              "name": "motor_1_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_1_GPIO",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 1,
+                  "param": "gpio"
+                },
+                "motor": {
+                  "index": 1,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 16
+            },
+          
+            {
+              "core": false,
+              "name": "motor_2_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_2_GPIO",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 2,
+                  "param": "gpio"
+                },
+                "motor": {
+                  "index": 2,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 17
+            },
+          
+            {
+              "core": false,
+              "name": "motor_0_frequency",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_0_FREQUENCY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 0,
+                  "param": "frequency"
+                },
+                "motor": {
+                  "index": 0,
+                  "param": "frequency"
+                },
+              
+              
+              "default": 40000
+            },
+          
+            {
+              "core": false,
+              "name": "motor_1_frequency",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_1_FREQUENCY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 1,
+                  "param": "frequency"
+                },
+                "motor": {
+                  "index": 1,
+                  "param": "frequency"
+                },
+              
+              
+              "default": 40000
+            },
+          
+            {
+              "core": false,
+              "name": "motor_2_frequency",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "MOTOR_2_FREQUENCY",
+              "module": "motor",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "motor",
+                  "len": 3,
+                  "index": 2,
+                  "param": "frequency"
+                },
+                "motor": {
+                  "index": 2,
+                  "param": "frequency"
+                },
+              
+              
+              "default": 40000
+            },
+          
+            {
+              "core": false,
+              "name": "led_0_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_0_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 0,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 0,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_1_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_1_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 1,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 1,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_2_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_2_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 2,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 2,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_0_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_0_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 0,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 0,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 33
+            },
+          
+            {
+              "core": false,
+              "name": "led_1_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_1_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 1,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 1,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 25
+            },
+          
+            {
+              "core": false,
+              "name": "led_2_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_2_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 2,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 2,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 26
+            },
+          
+            {
+              "core": false,
+              "name": "led_3_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_3_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 3,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 3,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_4_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_4_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 4,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 4,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_5_duty",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_5_DUTY",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 5,
+                  "param": "duty"
+                },
+                "led": {
+                  "index": 5,
+                  "param": "duty"
+                },
+              
+              
+              "default": 0
+            },
+          
+            {
+              "core": false,
+              "name": "led_3_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_3_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 3,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 3,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 27
+            },
+          
+            {
+              "core": false,
+              "name": "led_4_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_4_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 4,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 4,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 14
+            },
+          
+            {
+              "core": false,
+              "name": "led_5_gpio",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "LED_5_GPIO",
+              "module": "led",
+              
+              
+              "write": true,
+              
+                "array": {
+                  "name": "led",
+                  "len": 6,
+                  "index": 5,
+                  "param": "gpio"
+                },
+                "led": {
+                  "index": 5,
+                  "param": "gpio"
+                },
+              
+              
+              "default": 12
+            },
+          
+            {
+              "core": false,
+              "name": "tester_animation",
+              "type": "integer",
+              "integer": true,
+              "caps_name": "TESTER_ANIMATION",
+              "module": "tester",
+              
+              
+              "write": true,
+              
+              
+              "default": 1
+            }
+          
+  ]
+}
+

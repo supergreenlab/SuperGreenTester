@@ -7,8 +7,9 @@ modules motor: _MODULE & {
   init_priority: 90
 }
 
-modules motor fields "\(k)_duty": _INT8 & _HTTP & {
+modules motor fields "\(k)_duty": _INT8 & _HTTP_RW & {
   default: 0
+  write_cb: true
 } for k, v in _motor_conf
 
 modules motor fields "\(k)_gpio": _INT8 & _NVS & _HTTP_RW & {

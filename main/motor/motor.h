@@ -27,5 +27,6 @@ void refresh_motors();
 /* KV Callbacks */
 
 int on_set_motor_frequency(int motorId, int value);
+int on_set_motor_duty(int motorId, int value);
 
 #endif
